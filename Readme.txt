@@ -1,3 +1,19 @@
+Simulación en Gazebo de un robot móvil con ruedas enconfiguración diferencial desarrollado en ROS.
+
+Basado en paquete existente: https://github.com/ros-mobile-robots/diffbot
+
+Trabajo desarrollado en cuanto a localización, control de alto nivel y planificación de caminos con posibilidad de extensión a planificación de caminos/trayectorias.
+
+LOCALIZACIÓN: Planteamos la localización del robot como resultado de la fusión sensorial de los sensores que lleva a bordo: IMU, Lidar y medidas de velocidad. En este trabajo, se presentan tres métodos de localización basados en la fusión mediante un EKF ...
+
+CONTROLADOR ALTO NIVEL: Adaptación Pure-Pursuit Nos hemos basado en la técnica de control de alto nivel de persecución pura. A partir de ella hemos hecho una serie de adaptaciones particulares para nuestra configuración y hemos planteado algunas simplificaciones para su implementación...
+
+PLANIFICACIÓN DE CAMINOS: se ha decidido usar el algoritmo de Dijkstra para calcular el camino de mínimo coste hasta el punto objetivo...
+
+Toda la documentación relativa a resultados experimentales puede verse en la memoria de trabajo.
+
+------------------------------------------------------------------------------------------------------------------------------
+
 En este workspace de ROS, podemos encontrar en la carpeta /src/alpha_bot los distintos paquetes desarrollados:
 */alpha_bot_control: Aquí se encuentra nuestro controlador de alto nivel variante del pure-pursuit.
 */alpha_bot_description: Contiene el modelo del robot en xacro.
