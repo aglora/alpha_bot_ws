@@ -1,0 +1,8 @@
+prefix=/home/alvaro/alpha_bot_workspace/alpha_bot_ws/install
+
+Name: alpha_bot_simulation
+Description: Description of alpha_bot_simulation
+Version: 1.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/alvaro/alpha_bot_workspace/alpha_bot_ws/install
+
+Name: alpha_bot_localization
+Description: Description of alpha_bot_localization
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
